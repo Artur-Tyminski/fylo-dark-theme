@@ -1,0 +1,950 @@
+/*     
+font-family: 'Open Sans', sans-serif;
+
+font-family: 'Raleway', sans-serif;
+ */
+
+/*-- GENERAL --*/
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.page {
+    margin: 0;
+}
+
+.container {
+    width: 86%;
+    max-width: 93.75rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.image-svg {
+    fill: #ffffff;
+    min-width: 1.6em;
+    width: 1.6em;
+    margin-right: 0.875em;
+    transition: fill 100ms ease-in-out;
+    transform: translateY(.3em);
+}
+
+.image-svg--position {
+    align-self: flex-start;
+}
+
+.img-svg-margin {
+    margin-right: 0.875em;
+}
+
+.social-svg {
+    fill: #ffffff;
+    transition: fill 100ms ease-in-out;
+    width: 1.935em;
+}
+
+/*-- GENERAL TYPOGRAPHY --*/
+
+.body-typo {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.904);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.special-typo {
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.904);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cite-text {
+    font-style: normal;
+    display: block;
+}
+
+.hover-link:hover,
+.hover-link:focus {
+    color: hsl(176, 68%, 64%);
+    fill: hsl(176, 68%, 64%);
+    outline: none;
+}
+
+/*-- COMPONENTS GEOMETRY/POSITION --*/
+
+.page__header {
+    margin-bottom: 5.715em;
+}
+
+.header__btn {
+    margin: 0 auto;
+}
+
+.main__benefits {
+    margin-bottom: 4em;
+}
+
+.main__learn {
+    margin-bottom: 11.43em;
+}
+
+.main__testimony {
+    margin: 0 auto;
+}
+
+.main__form {
+    margin: 0 auto;
+    margin-top: -2.285em;
+    position: relative;
+    top: 12em;
+}
+
+/*-- BTN --*/
+
+.btn {
+    background: linear-gradient(152.13deg, #63E1D9 -150.21%, #34A0CD 170.03%);
+    border-radius: 5em;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    max-width: 7em;
+    min-width: 15em;
+    padding: calc(1em - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: background-color 125ms cubic-bezier(0, .78, 0, .78), box-shadow 225ms cubic-bezier(0, .78, 0, .78);
+    z-index: 2;
+    border: 1px solid rgb(59, 214, 204);
+    line-height: 1.428em;
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 0 0px 30px rgba(14, 12, 12, 0.651);
+}
+
+/*-- FORM-email --*/
+
+.form {
+    background: #1c2230;
+    border-radius: .5em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
+    padding: 2.85em 2em 2.645em;
+    text-align: center;
+    max-width: 27em;
+    width: 89.6%;
+}
+
+.form__headline {
+    font-size: 1.29rem;
+    margin: 0 0 0.89em;
+}
+
+.form__body {
+    margin: 0 0 2.29em;
+}
+
+.form__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 22.5em;
+}
+
+.form__email {
+    border: none;
+    border-radius: 5em;
+    box-sizing: border-box;
+    margin: 0 0 2.4em;
+    padding: 1.9em 0 1.5em 2.9em;
+    font-size: 0.715rem;
+    line-height: 1.4em;
+
+}
+
+.form__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    max-width: 100%;
+    line-height: 1.143em;
+    padding: 1.072em 0;
+}
+
+/*-- PAGE --*/
+
+.page {
+    background-color: #181f2b;
+}
+
+/*-- HEADER --*/
+
+.header {
+    background: #1b2330 url(images/bg-curvy-mobile.svg) no-repeat center bottom;
+    background-size: 100%;
+    padding: 1.714em 0 0;
+}
+
+.header__inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.428em;
+    width: 89.33%;
+}
+
+.header__logo {
+    width: 5.714rem;
+}
+
+.header__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header__item {
+    list-style: none;
+    margin-left: 1.714em;
+    padding: 0;
+}
+
+.header__link {
+    color: inherit;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 100ms ease-in-out;
+}
+
+/*-- hero --*/
+
+.header__hero {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.header__hero-inner {
+    margin: 0 auto;
+}
+
+.header__title {
+    font-size: 1.715rem;
+    margin: 0 auto 0.625em;
+    max-width: 18.4em;
+}
+
+.header__body {
+    margin: 0 auto 2.285em;
+    max-width: 29.45em;
+}
+
+.header__img {
+    margin: 0 auto 2.575em;
+    max-width: 31em;
+    width: calc(100% - 14.75px);
+}
+
+/*-- BENEFITS --*/
+
+.benefits {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.benefits__card {
+    margin-bottom: 5.715em;
+    max-width: 25em;
+}
+
+.benefits__title {
+    font-size: 1.285rem;
+    line-height: 1.34em;
+    margin-bottom: 0.44em;
+}
+
+.benefits__body {
+    margin-top: 0;
+}
+
+.benefits__img {
+    display: inline-block;
+    margin-bottom: 1.715em;
+    max-width: 6rem;
+}
+
+/*-- LEARN --*/
+
+.learn {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.learn__headline {
+    font-size: 1.29rem;
+    margin-bottom: 1.125em;
+}
+
+.learn__body {
+    max-width: 43.75em;
+    margin-bottom: 1.145em;
+}
+
+.learn__link {
+    color: hsla(176, 44%, 64%, 0.863);
+    padding-bottom: .5em;
+    position: relative;
+    text-decoration: none;
+    transition: color 500ms ease-in-out;
+    font-size: 0.86rem;
+}
+
+.learn__link-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.4em;
+}
+
+.learn__link::after {
+    border-bottom: 0.0625em solid #8affe6;
+    bottom: 0;
+    content: ' ';
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+}
+
+.learn__link::before {
+    background-image: linear-gradient(to right, #00e9ff, #00f1f2, #00f8da, #00fdb7, #00ff8b, #7ff15b, #b0e02f, #d5cd00, #fea62d, #ff835c, #fa6e86, #d16ba5);
+    bottom: 0;
+    content: ' ';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 400ms cubic-bezier(.45, .05, .55, .95);
+    width: 100%;
+}
+
+.learn__link:hover::before,
+.learn__link:focus::before {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.learn__img {
+    margin: 0 auto 3.43em;
+    max-width: 43.92em;
+    width: 100%;
+}
+
+/*-- TESTIMONY --*/
+
+.testimony {
+    margin: 0 auto;
+    max-width: 32.5em;
+    position: relative;
+    width: 80%;
+}
+
+.testimony::before {
+    background: url(images/bg-quotes.png) no-repeat;
+    background-size: 100%;
+    content: '';
+    display: block;
+    height: 30px;
+    left: 5px;
+    max-width: 43.75em;
+    position: absolute;
+    top: -25px;
+    width: 30px;
+}
+
+.testimony__quote {
+    background: #21293c;
+    border-radius: .3em;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.116);
+    margin: 0 auto 1.714em;
+    width: 93%;
+    padding: 1.714em 1.42em 1.5em;
+    box-sizing: border-box;
+}
+
+.testimony__body {
+    font-size: .715rem;
+    margin: 0;
+    margin-bottom: 1.7em;
+    line-height: 1.8em;
+}
+
+.testimony__details {
+    align-items: center;
+    display: flex;
+}
+
+.testimony__img {
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 0.57em;
+    width: 1.714em;
+}
+
+.testimony__author {
+    font-size: .715rem;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+    line-height: 1.2em;
+}
+
+.testimony__position {
+    font-size: 0.57rem;
+    line-height: 1.25em;
+}
+
+.know-more__link:hover::before,
+.know-more__link:focus::before {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+/*-- FOOTER --*/
+
+.footer {
+    background: #0c1524;
+    padding: 17.215em 0 2em;
+}
+
+.footer__logo {
+    margin: 0 0 2.86em;
+    width: 12.575em;
+}
+
+.footer__details {
+    align-items: flex-end;
+    display: flex;
+    margin: 0 0 1.5em;
+}
+
+.footer__address,
+.footer__phone,
+.footer__email {
+    margin: 0;
+}
+
+.footer__address {
+    max-width: 22em;
+    font-size: 1.145em;
+}
+
+.footer__detials-container {
+    margin-bottom: 6em;
+
+}
+
+.footer__nav {
+    font-size: 1.145em;
+    margin-bottom: 4em;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__item {
+    margin-bottom: 1.1em;
+}
+
+.footer__link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 100ms ease-in-out;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-mg {
+    margin: 0 1em;
+}
+
+@media (min-width: 450px) {
+
+    .header__logo {
+        width: 7.56em;
+    }
+
+    .header__link {
+        font-size: 1.023rem;
+    }
+
+    .testimony__body {
+        font-size: .84rem;
+    }
+
+    .learn__inner {
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 650px) {
+
+    .header__logo {
+        width: 9.45em;
+    }
+
+    .header__title {
+        font-size: 2.1425rem;
+    }
+
+    .header__body {
+        font-size: 1.215rem;
+        max-width: 29.45em;
+    }
+
+    .header__img {
+        max-width: 39rem;
+    }
+
+    .learn__headline {
+        font-size: 2.147rem;
+    }
+
+    .learn__body {
+        font-size: 1.143rem;
+    }
+
+    .learn__link {
+        font-size: 1.143rem;
+    }
+
+    .footer {
+        padding: 16em 0 3em;
+    }
+}
+
+
+@media (min-width: 850px) {
+
+    /* benefits */
+
+    .benefits {
+        align-items: baseline;
+        column-gap: 10%;
+        grid-template-columns: minmax(16em, 27em) minmax(16em, 27em);
+        justify-content: space-between;
+        max-width: 55rem !important;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .header__logo {
+        width: 11.475em;
+    }
+
+    .image-svg {
+        margin-right: 21px;
+    }
+
+    .img-svg-margin {
+        margin-right: 14px;
+    }
+
+    /* geometry/position */
+
+    .main__form {
+        position: relative;
+        top: 8em;
+    }
+
+    .header__title {
+        font-size: 2.575rem;
+    }
+
+    /* form */
+
+    .form {
+        max-width: 55rem !important;
+        padding: 2.5em 4em;
+    }
+
+    .form__body {
+        margin: 0 auto 2em;
+        max-width: 90%;
+    }
+
+    .form__container {
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .form__email {
+        border-radius: 5em;
+        margin: 0 2.5% 0 0;
+        width: 100%;
+    }
+
+    .form__btn {
+        font-size: .875rem;
+        width: 20%;
+    }
+
+    /* learn */
+
+    .learn__headline {
+        font-size: 2.575rem;
+    }
+
+    /* footer */
+
+    .footer {
+        padding: 14.29em 0 2em;
+    }
+
+    .footer__container {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__col {
+        margin-right: calc(2vw + 30px);
+    }
+
+    .footer__details {
+        max-width: 40em;
+    }
+
+    .footer__detials-container {
+        max-width: 18.75rem;
+    }
+
+    .position-transform,
+    .phone-transform {
+        transform: translateY(.45em);
+    }
+
+    .email-transform {
+        transform: translateY(.1em);
+    }
+
+    .footer__nav-container {
+        display: flex;
+        margin-right: 1vw;
+    }
+
+    .footer__nav {
+        font-size: 1rem;
+        min-width: 6.875em;
+    }
+
+    .footer__nav-mg1 {
+        margin-right: 2vw;
+    }
+
+    .social {
+        display: flex;
+        min-width: 6.1em;
+    }
+}
+
+@media (min-width: 1250px) {
+
+
+    /* geometry/position */
+
+    .page__header {
+        margin-bottom: -10.625em;
+    }
+
+    .footer__social {
+        transform: translateY(1rem);
+        justify-content: right;
+    }
+
+    .main__form {
+        margin-top: 4em;
+    }
+
+    .main__learn {
+        margin-bottom: 12.79em;
+    }
+
+    /* header */
+
+    .header {
+        padding-bottom: 22em;
+    }
+
+    .header__inner {
+        margin-bottom: 5.35em;
+    }
+
+    .header__link {
+        font-size: 1.145rem;
+    }
+
+    .header__logo {
+        width: 12.575em;
+    }
+
+    .header__title {
+        font-size: 2.85rem;
+        margin: 0 auto 0.8em;
+        line-height: 1.51em;
+    }
+
+    .header__body {
+        font-size: 1.43rem;
+        margin: 0 auto 1.6em;
+    }
+
+    .header__img {
+        max-width: 51.45em;
+    }
+
+    .header__btn {
+        max-width: 17.5em;
+        padding: 1.125em 0 1.0625em;
+        box-sizing: border-box;
+        font-size: 1.14285rem;
+        line-height: 1.1875em;
+    }
+
+    /* benefits */
+
+    .main__benefits {
+        margin-bottom: 4.17em;
+    }
+
+    .benefits {
+        max-width: 62.86em !important;
+    }
+
+    .benefits__card {
+        margin-bottom: 5.57em;
+    }
+
+    .benefits__img {
+        display: inline-block;
+        margin-bottom: 1.143rem;
+        width: 7.43em;
+        height: 7.43em;
+        max-width: 100%;
+    }
+
+    .benefits__title {
+        font-size: 1.43rem;
+        line-height: 1.15em;
+        margin-bottom: 0.45em;
+    }
+
+    /* learn */
+
+    .learn {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 1238px;
+    }
+
+    .learn__headline {
+        font-size: 2.858rem;
+        max-width: 10em;
+        line-height: 1.25em
+    }
+
+    .learn__body {
+        font-size: 1.143rem;
+        margin-bottom: 1em;
+    }
+
+    .mg-b-24 {
+        margin-bottom: 1.5em;
+    }
+
+
+
+    .learn__img {
+        margin: 0;
+        max-width: 43.92em;
+        width: 100%;
+    }
+
+    .learn__inner {
+        max-width: 560px;
+        margin-left: 4em;
+    }
+
+    /* testimony */
+
+    .main__testimony {
+        margin-bottom: 5.93em;
+    }
+
+    .testimony {
+        display: flex;
+        justify-content: space-between;
+        max-width: 93.75rem;
+        width: 81.95%;
+    }
+
+    .testimony::before {
+        height: 3em;
+        left: .3em;
+        top: -2.4em;
+        width: 3em;
+    }
+
+    .testimony__quote {
+        margin: 0 .715em;
+        max-width: 360px;
+        width: 100%;
+        padding: 2.857em 1.85em 1.85em;
+    }
+
+    .testimony__body {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+
+    /* form */
+
+    .main__form {
+        max-width: 863px !important;
+        padding: 3em 5.5em;
+        top: 0;
+        margin-top: auto;
+        top: 8.36em;
+    }
+
+    .form__headline {
+        font-size: 2.285rem;
+        line-height: 1.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .form__body {
+        margin: 0 auto 2.715em;
+    }
+
+    .form__email {
+        max-width: 40em;
+
+        padding: 17px 200px 15px 38px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .form__btn {
+        font-size: 1rem;
+        min-width: 14.29em;
+    }
+
+    /* footer */
+
+    .footer__link {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .footer__flex-ct {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer__container {
+        width: 85%;
+    }
+
+    .footer__detials-container,
+    .footer__nav {
+        margin-bottom: 0;
+    }
+
+    .footer__detials-container {
+        transform: translate(-4.35em);
+    }
+
+    .footer__nav {
+        transform: translate(-3em);
+    }
+
+    .social-svg {
+        width: 2.25em;
+    }
+
+
+}
+
+@media (min-width: 2560px) {
+
+    html {
+        font-size: 30px;
+    }
+
+    /* geometry/position */
+
+    .page__header {
+        margin-bottom: -10rem;
+    }
+
+    /* header */
+
+    .header {
+        padding-bottom: 20rem;
+    }
+
+}
+
+@media (min-width: 3839px) {
+
+    html {
+        font-size: 46px;
+    }
+
+    .container {
+        max-width: 79em;
+    }
+
+    /* geometry/position */
+
+    .page__header {
+        margin-bottom: -15rem;
+    }
+
+    /* header */
+
+    .header {
+        padding-bottom: 25rem;
+    }
+
+}
+
+/* co mi sprawilo problem
+- projekt dla dwoch ukladaow bez inf co pomiedzy; pytanie bylo jak zachowac na coraz wiekszych urzadzeniach wlasciwe proporcje ktore by oscylowaly pomiedzy projektem na urzadzenia mobilne a na pelnowymiarowe monitory; rozwiazaniem bylo wyliczenie ile procent stanowi wielkosc na urzadzenia mobilne w odniesieniu do 100% wielkosci na na duze ekrany; kolejne zmiany nastepowly na zasadzie zwiekszania przy kolejnym brakpoincie o 10%, 15%; 100% osiagnalem na ukladzie dla monitorow
